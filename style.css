@@ -162,6 +162,13 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+  text-decoration: none;
+
+  transition: font-size 0.2s ease-out;
+}
+
+#hero button:hover {
+  font-size: 17px;
 }
 
 /*FEATURES*/
@@ -173,6 +180,7 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
+  cursor: pointer;
 }
 
 #feature .fe-box:hover {
@@ -478,6 +486,13 @@ body {
   white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  transition: 0.2s ease-out;
+}
+
+#newsLetter button:hover {
+  background-color: #47dfd4;
+  color: black;
+  font-weight: bold;
 }
 
 #newsLetter .form {
@@ -532,6 +547,11 @@ footer .follow i {
 footer .install .row img {
   border: 1px solid #088178;
   border-radius: 6px;
+  transition: transform 0.2s ease-out;
+}
+
+footer .install .row img:hover {
+  transform: scale(1.07);
 }
 
 footer .install img {
@@ -548,6 +568,34 @@ footer .copyright {
   text-align: center;
 }
 
+.row {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.payment {
+  cursor: pointer;
+}
+
+.banks {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.banks a img {
+  width: 55px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.2s ease-out;
+}
+
+.banks a img:hover {
+  transform: scale(1.1);
+}
+
 /*SHOP PAGE*/
 #page-header {
   background-image: url("img/banner/b1.jpg");
@@ -556,7 +604,6 @@ footer .copyright {
   background-size: cover;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
   text-align: center;
   padding: 14px;
@@ -841,6 +888,11 @@ marquee {
   color: white;
 }
 
+#form-details form button:hover {
+  background-color: #47dfd4;
+  color: black;
+}
+
 #form-details .people div {
   padding-bottom: 25px;
   display: flex;
@@ -960,6 +1012,12 @@ marquee {
   background-color: #088178;
   color: white;
   padding: 12px 20px;
+}
+
+#coupon button:hover,
+#subtotal button:hover {
+  background-color: #47dfd4;
+  color: black;
 }
 
 #subtotal {
